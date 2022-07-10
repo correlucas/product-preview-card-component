@@ -128,7 +128,7 @@ body {
 }
 
 h1 {
-  font-family: 'Abhaya Libre';
+  font-family: 'Fraunces', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -153,8 +153,8 @@ p {
 }
 
 .product-price h2 {
-  font-family: 'Abhaya Libre';
-  font-weight: bold;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
   font-size: 32px;
   line-height: 32px;
   color: var(--black);
@@ -181,4 +181,10 @@ p {
   font-size: 14px;
   line-height: 17px;
   color: var(--white);
+  transition: ease-in-out 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--dark-green-hover);
+  transition: ease-in-out 0.3s;
 }
