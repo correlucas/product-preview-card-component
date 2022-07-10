@@ -88,6 +88,16 @@ body {
 
 /* .grayscale hover effect */
 
+.photo-overflow {
+  overflow: hidden;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.product-photo {
+  position: relative;
+  transition: linear 0.8s;
+}
+
 .product-photo img {
   display: flex;
   height: 100%;
@@ -95,8 +105,9 @@ body {
   border-radius: 10px 0px 0px 10px;
 }
 
-.product-photo {
-  position: relative;
+.product-photo:hover {
+  transform: scale(1.1) rotate(2deg);
+  transition: linear 0.5s;
 }
 
 .grayscale {
@@ -106,12 +117,13 @@ body {
   top: 0;
   bottom: 0;
   opacity: 100;
-  transition: ease-out 1.5s;
+  transition: linear 0.8s;
+  filter: saturate(1.3);
 }
 
 .grayscale:hover {
   opacity: 0;
-  transition: ease-in 0.5s;
+  transition: linear 0.5s;
 }
 
 /* *** */
