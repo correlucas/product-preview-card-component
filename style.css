@@ -59,22 +59,16 @@ body {
   background-color: var(--cream);
 }
 
-/* .container {
-  display: flex;
-  align-items: center;
-  max-width: 600px;
-  background-color: var(--white);
-} */
 
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   max-width: 600px;
-  max-width: 600px;
   background-color: var(--white);
   border-radius: 10px;
   box-shadow: 3px 4px 14px rgba(18, 19, 17, 0.03);
   transition: ease 0.5s;
+  margin: 16px 24px;
 }
 
 .container:hover {
@@ -94,19 +88,27 @@ body {
 }
 
 .product-photo {
+  overflow: hidden;
   position: relative;
   transition: linear 0.8s;
+  transform: scale(1.2);
 }
 
 .product-photo img {
   display: flex;
-  height: 100%;
-  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: left;
   border-radius: 10px 0px 0px 10px;
 }
 
+.product-photo-mobile img,
+.product-photo-mobile {
+  display: none;
+}
+
 .product-photo:hover {
-  transform: scale(1.1) rotate(2deg);
+  transform: scale(1);
   transition: linear 0.5s;
 }
 
@@ -184,11 +186,11 @@ p {
 
 .btn {
   display: flex;
+  align-items: center;
   background-color: var(--green);
   padding: 15px 62px;
   border-radius: 8.5px;
   gap: 10px;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -196,7 +198,55 @@ p {
   transition: ease-in-out 0.3s;
 }
 
+.btn img {
+  height: 100%;
+}
+
 .btn:hover {
   background-color: var(--dark-green-hover);
   transition: ease-in-out 0.3s;
+}
+
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    border-radius: 10px;
+  }
+
+  .photo-overflow {
+    border-radius: 0;
+  }
+
+  .product-info-wrapper {
+    padding: 24px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 90%;
+  }
+
+  .product-photo-mobile img,
+  .product-photo-mobile {
+    display: flex;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .product-photo-mobile {
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .product-photo,
+  .grayscale {
+    display: none;
+  }
+}
+
+@media (max-width: 280px) {
+  .btn {
+    font-size: 10px;
+    padding: 16px 32px;
+  }
 }
