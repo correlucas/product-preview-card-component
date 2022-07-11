@@ -91,7 +91,7 @@ body {
   overflow: hidden;
   position: relative;
   transition: linear 0.8s;
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
 }
 
 .product-photo img {
