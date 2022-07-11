@@ -182,6 +182,10 @@ p {
   color: var(--gray);
 }
 
+span {
+  text-decoration: line-through;
+}
+
 /* button */
 
 .btn {
