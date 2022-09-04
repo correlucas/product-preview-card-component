@@ -103,9 +103,7 @@ body {
 
 
 .container:hover {
-  box-shadow: 0.1875rem 0.25rem 1.1875rem rgba(18, 19, 17, 0.1);
   transition: ease 0.5s;
-  transform: scale(1.05);
   box-shadow: 0.1875rem 0.25rem 0.875rem rgba(14, 51, 33, 0.135);
 }
 
