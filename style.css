@@ -104,7 +104,7 @@ body {
 
 .container:hover {
   transition: ease 0.5s;
-  box-shadow: 0.1875rem 0.25rem 0.875rem rgba(14, 51, 33, 0.135);
+  box-shadow: 0.1875rem 0.25rem 0.875rem rgba(14, 51, 33, 0.52);
 }
 
 .product-info-wrapper {
