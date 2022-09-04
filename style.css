@@ -115,13 +115,15 @@ body {
 
 .photo-overflow {
   overflow: hidden;
+  transition: ease-out 1s;
   border-radius: 0.625rem 0rem 0rem 0.625rem;
 }
+
 
 .product-photo {
   overflow: hidden;
   position: relative;
-  transition: linear 0.8s;
+  transition: ease-in 1s;
   /* transform: scale(1.2); */
 }
 
@@ -140,7 +142,7 @@ body {
 
 .product-photo:hover {
   transform: scale(1);
-  transition: linear 0.5s;
+  transition: ease-out 1s;
 }
 
 .grayscale {
@@ -150,7 +152,7 @@ body {
   top: 0;
   bottom: 0;
   opacity: 100;
-  transition: linear 0.8s;
+  transition: ease-out 2s;
   filter: saturate(1.3);
 }
 
