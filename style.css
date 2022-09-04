@@ -101,17 +101,6 @@ body {
   margin: 1rem 1.5rem;
 }
 
-h1:hover,
-button:hover {
-  transition: ease-in-out.5s;
-  transform: translateX(4px);
-}
-
-h1,
-button {
-  transition: ease-in-out.5s;
-  transform: translateX(0px);
-}
 
 .container:hover {
   box-shadow: 0.1875rem 0.25rem 1.1875rem rgba(18, 19, 17, 0.1);
